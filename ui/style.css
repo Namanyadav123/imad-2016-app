@@ -20,3 +20,14 @@ body {
     height: 200px;
 }
 
+.naman
+           {
+                background-color: green;
+                color: rgba(0, 112, 255, 0.87);
+                font-family: arial;
+                padding-top: 20px;
+                padding-bottom: 60px;
+                padding-right: 10px;
+                margin:0 auto;
+                }
+
