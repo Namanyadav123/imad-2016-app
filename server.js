@@ -13,34 +13,32 @@ var artilcleone = {
     };
     function createtemplate (data) {
         var title=data.title;
-        var heading=dta.heading;
+        var heading=data.heading;
         var content=data.content;
         var date=data.date;
-    var htmltemplate = '
-          <html>
+    var htmltemplate =
+         '<html>'
          <head> 
-          <title>
-         <center>${title}</center>
-          </title>
-        <link href="/ui/style.css" rel="stylesheet" />
-        </head>
-        <div>
-        ${date}
-        </div>
+          '<title>'
+         '<center>${title}</center>'
+         '</title>'
+        '<link href="/ui/style.css" rel="stylesheet" />'
+       '</head>'
+       ' <div>'
+       '${date}'
+       ' </div>'
     <div>
-                    <a href = "artilcle-one.html">home</a>
-                </div>
-                <div class="naman">
+                    '<a href = "artilcle-one.html">home</a>'
+               '</div>'
+               ' <div class="naman">'
                 <h1>
-                  <B><U>  ${heading}</B></U>
+                 ' <B><U>  ${heading}</B></U>'
                 <p>
-                   <center>${content}</center>
-                </h1>
-                </div>
-                </body>
-</html>
-';
-   
+                  ' <center>${content}</center>'
+               ' </h1>'
+                '</div>'
+                '</body>'
+'</html>';
 return htmltemplate;
 }
 app.get('/', function (req, res) {
