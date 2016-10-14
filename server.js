@@ -19,7 +19,7 @@ app.get('/article-two',function(req,res) {
 });
 
 app.get('/FIRSTPROJECT',function(req,res) {
-  res.sendFile(path.join(__dirname, 'ui', 'FIRSTPROJECT.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'FIRST PROJECT.html'));
 });
 
 app.get('/ui/style.css',function(req,res){
