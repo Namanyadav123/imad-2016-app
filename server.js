@@ -18,8 +18,8 @@ app.get('/article-two',function(req,res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
-app.get('/FIRST PROJECT',function(req,res) {
-  res.sendFile(path.join(__dirname, 'ui', 'FIRST PROJECT.html'));
+app.get('/FIRSTPROJECT',function(req,res) {
+  res.sendFile(path.join(__dirname, 'ui', 'FIRSTPROJECT.html'));
 });
 
 app.get('/ui/style.css',function(req,res){
