@@ -9,36 +9,38 @@ var artilcleone = {
     title:'article-one',
     heading:'lets start our web app',
     date:'13 oct,2016',
-    content: '<p>hello,friends my name is NAMAN YADAV</p>'
+    content: '<p>hello,friends my name is NAMAN YADAV</p>',
     };
-    function createtemplate(data) {
+    function createtemplate (data) {
         var title=data.title;
         var heading=dta.heading;
         var content=data.content;
         var date=data.date;
-    var htmltemplate =
-    '<html>';
-   ' <head>';
-       ' <title>';
-            '<center>$(title)</center>';
-       ' </title>';
-           ' <link ;href="/ui/style.css" rel="stylesheet" />'
-           ' </head>';
-                '<div>';
-                   ' $(date)';
-               ' </div>';
-                '<div>';
-                   ' <a href = "artilcle-one.html">home</a>';
-               ' </div>';
-               ' <div class="naman">';
-               ' <h1>';
-                    '<B><U>$(haeding)</U></B>'
+    var htmltemplate = '
+          <html>
+         <head> 
+          <title>
+         <center>${title}</center>
+          </title>
+        <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        <div>
+        ${date}
+        </div>
+    <div>
+                    <a href = "artilcle-one.html">home</a>
+                </div>
+                <div class="naman">
+                <h1>
+                  <B><U>  ${heading}</B></U>
                 <p>
-                  ' <center>$(content)</center>'
-               ' </h1>'
-               ' </div>'
-               ' </body>'
-'</html>';
+                   <center>${content}</center>
+                </h1>
+                </div>
+                </body>
+</html>
+';
+   
 return htmltemplate;
 }
 app.get('/', function (req, res) {
