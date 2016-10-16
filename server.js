@@ -11,7 +11,7 @@ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/artilcle-one',function(req,res) {
-  res.send(createtemplate(artilcleone));
+res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-two',function(req,res) {
@@ -19,7 +19,7 @@ app.get('/article-two',function(req,res) {
 });
 
 app.get('/article-4',function(req,res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-4.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'article-four.html'));
 });
 
 app.get('/ui/style.css',function(req,res){
